@@ -12,5 +12,22 @@ public class Main {
 
         System.out.println("Название книги: " + book1.getName() + ", год издания книги: " + book1.getYear() + ", автор книги: " + book1.getAuthor().getFullName());
         System.out.println("Название книги: " + book2.getName() + ", год издания книги: " + book2.getYear() + ", автор книги: " + book2.getAuthor().getFullName());
+
+        System.out.println("book1.toString() = " + book1);
+        System.out.println("book2.toString() = " + book2);
+
+        System.out.println("author1.toString() = " + author1);
+        System.out.println("author2.toString() = " + author2);
+
+        System.out.println("book1.equals() = " + book1.equals(book2));
+        System.out.println("book1.equals() = " + book2.equals(book2));
+
+        System.out.println("author1.equals() = " + author1.equals(author2));
+        System.out.println("author2.equals() = " + author2.equals(author2));
+
+        System.out.println("Хеш код автора " + book1.getAuthor() + " " + author1.hashCode());
+        System.out.println("Хеш код автора " + book2.getAuthor() + " " + author2.hashCode());
+        System.out.println("Хеш код книги " + book1.getName() + " " + book1.hashCode());
+        System.out.println("Хеш код книги " + book2.getName() + " " + book2.hashCode());
     }
 }
